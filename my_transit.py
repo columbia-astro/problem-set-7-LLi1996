@@ -38,7 +38,6 @@ def FluxRatio(p, z):
        z - distance between star and planet divided by stellar radius
     Returns: 
        FluxRatio - ratio of obscured to unobscured stellar flux
-
     """
     return 1 - lambd(p, abs(z))
 
@@ -67,4 +66,3 @@ def delta(p, r, z):
         return 1
     b = beta(p, r, z)
     return b/(2*math.pi)
-
